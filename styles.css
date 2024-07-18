@@ -1,24 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 body{
-    margin: 15px auto;
+    margin: 15px;
     font-family: "Mulish", sans-serif;
     font-weight: 700;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-header>label{
-    position:absolute;
-    left:15px;
-    top: 15px;
+header {
+    min-width: 568px;
+    box-sizing: border-box;
+    position: relative;
+    left: 15px;
 }
 
 main{
-    margin: 120px 70px;
+    min-width: 568px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
+    margin-top: 60px;
 }
 
 .progress{
@@ -119,15 +125,13 @@ input[type="number"]{
 
   @media screen and (orientation: portrait) {
     main{
-        margin: 120px 70px;
         flex-direction: column;
+        min-width: 320px;
+    }
+    header {
+        min-width: 320px;
     }
   }
-  @media screen and (orientation: landscape) {
-    main{
-        margin: 100px 120px;
-        flex-direction: row;
-    }
-  }
+ 
   
   
